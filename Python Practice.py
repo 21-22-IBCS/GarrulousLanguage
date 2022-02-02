@@ -99,3 +99,46 @@ def front3(str):
     str= str+str+str
     return str
 
+#stringtime
+def string_times(str, n):
+  result = ""
+  for i in range(n):  
+    result = result + str  
+  return result
+
+#stringplosion
+def string_splosion(str):
+  
+  result=""
+  n = len(str)
+  for i in range (n):
+    result = result+str[:i+1]
+    
+  return result
+
+#arrayfront
+def array_front9(nums):
+  
+  n = 0
+  
+  for i in range(len(nums)):
+    n=n+1
+    if n>4:
+      return False
+    
+    if nums[i] == 9:
+      return True
+    
+  return False
+
+#array123
+def array123(nums):
+  
+  for i in range(len(nums)-2):
+    if nums[i] == 1:
+      if nums[i+1]==2:
+        if nums[i+2]==3:
+          return True
+          
+  return False
+
